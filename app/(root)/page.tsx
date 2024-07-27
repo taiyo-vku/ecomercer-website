@@ -1,12 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { AlignCenter, AlignRight } from "lucide-react";
-import Image from "next/image";
-import { text } from "stream/consumers";
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+const SetupPage = () => {
   return (
     <div className="p-4">
-      <Button size="default" variant= "outline">Click me</Button>
+      <UserButton  ></UserButton>
     </div>
   );
 }
+
+export default SetupPage;
